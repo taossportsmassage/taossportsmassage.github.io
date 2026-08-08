@@ -22,14 +22,26 @@ h2{font-size:clamp(2.5rem,4.5vw,4.2rem);margin:.5rem 0 1.4rem}.lead{font-size:1.
 .footer{background:#2b2521;color:rgba(255,255,255,.72);padding:2.5rem 0}.footer-inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem;align-items:center;font-size:.85rem}.footer-brand{display:flex;align-items:center;gap:.7rem;color:white;font-family:"Cormorant Garamond",serif;letter-spacing:.12em}.footer-brand img{width:72px;filter:brightness(0) invert(1);opacity:.9}.footer-credits p{margin:.18rem 0}.footer-credits p:first-child{color:rgba(255,255,255,.9);font-style:italic}
 @media(max-width:900px){.header-cta{display:none}.menu-button{display:block;margin-left:auto;border:1px solid var(--line);background:transparent;padding:.55rem .75rem}.site-nav{display:none;position:absolute;top:86px;left:0;right:0;background:var(--paper);padding:1rem;flex-direction:column;border-bottom:1px solid var(--line)}.site-nav.open{display:flex}.hero{min-height:620px;background-position:60% 58%}.about-grid,.session-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:280px 1fr;gap:3rem}.research{grid-template-columns:1fr}.research-image{min-height:380px}.footer-inner{grid-template-columns:1fr;text-align:center}.footer-brand{justify-content:center}}
 @media(max-width:650px){.section{padding:5rem 0}.brand{font-size:.84rem;letter-spacing:.1em}.brand-line{width:58px}.hero{min-height:650px;background-position:66% center}.hero-shade{background:linear-gradient(90deg,rgba(39,30,24,.78),rgba(39,30,24,.38))}.hero h1{font-size:3.6rem}.about-grid{grid-template-columns:1fr}.portrait-wrap{width:220px}.approach-grid{grid-template-columns:1fr}.approach-grid article{padding:1.6rem 0}.approach-grid article+article{border-left:0;border-top:1px solid var(--line)}.session-list div{grid-template-columns:1fr;gap:.2rem}.contact-card strong span{display:block;margin-top:.35rem;white-space:normal}.mountain-divider{height:54px}.mountain-divider img{height:62px}}
-/* Thin full-width hand-drawn mountain section dividers */
+/* Thin, full-width hand-drawn mountain divider */
 .mountain-divider {
   width: 100%;
-  height: 38px;
+  height: 55px;
+  background-image: url("assets/mountain-line.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
   overflow: hidden;
-  line-height: 0;
-  display: flex;
-  align-items: center;
+}
+
+.mountain-divider img {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mountain-divider {
+    height: 38px;
+    background-size: 100% auto;
+  }
 }
 
 .mountain-divider img {
